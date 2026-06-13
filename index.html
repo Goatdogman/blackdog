@@ -211,6 +211,26 @@
   .disclosure .lbl{font-family:var(--mono);font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--stamp);margin-bottom:12px}
   .disclosure p{color:var(--bone-dim);font-size:16px;max-width:760px;margin:0}
 
+  /* tester program */
+  .tester-panel{
+    display:grid;grid-template-columns:minmax(190px,250px) 1fr;gap:0;
+    margin-top:38px;border:1px solid var(--line-strong);background:var(--panel);position:relative;
+  }
+  @media(max-width:680px){.tester-panel{grid-template-columns:1fr}}
+  .tester-panel::before,.tester-panel::after{content:"";position:absolute;width:16px;height:16px;border:2px solid var(--orange);opacity:0.7}
+  .tester-panel::before{top:10px;left:10px;border-right:none;border-bottom:none}
+  .tester-panel::after{bottom:10px;right:10px;border-left:none;border-top:none}
+  .tester-code{
+    background:var(--panel-2);border-right:1px solid var(--line);
+    padding:30px 28px;display:flex;flex-direction:column;justify-content:center;gap:10px;
+  }
+  @media(max-width:680px){.tester-code{border-right:none;border-bottom:1px solid var(--line)}}
+  .tester-code .lbl{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--od)}
+  .tester-code .code{font-family:var(--mono);font-weight:700;font-size:clamp(24px,3.4vw,34px);letter-spacing:0.06em;color:var(--orange);line-height:1}
+  .tester-cta{padding:30px 28px;display:flex;flex-direction:column;gap:18px;justify-content:center}
+  .tester-btn{display:inline-block;text-align:left;white-space:normal;line-height:1.35;align-self:flex-start;max-width:540px}
+  .tester-cta .filter{font-family:var(--mono);font-size:13px;color:var(--bone-dim);letter-spacing:0.04em;margin:0;line-height:1.7}
+
   /* go deeper */
   .deeper{text-align:center;padding:88px 0;border-bottom:1px solid var(--line);position:relative}
   .deeper::before{
@@ -400,6 +420,34 @@
       <div class="disclosure">
         <div class="lbl">Disclosure</div>
         <p>Blackdog supplies me product. I am telling you that up front because the method does not change based on who is paying. I recommended this collar before any of that, and I would stop the day it stopped earning it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTERS -->
+  <section class="block" id="testers">
+    <div class="wrap">
+      <div class="eyebrow reveal"><span class="bar"></span>Tester program &nbsp;//&nbsp; Open slots</div>
+      <h2 class="sec-title reveal">Blackdog needs <em>testers.</em></h2>
+      <div class="prose reveal" style="margin-top:26px">
+        <p>Blackdog gives me tester slots to hand out. Want to run the method on a free collar instead of buying one? Here is the way in.</p>
+        <p class="kicker">Use this code &darr;</p>
+      </div>
+
+      <div class="tester-panel reveal">
+        <div class="tester-code">
+          <div class="lbl">Tester code</div>
+          <div class="code">GOATDOGMAN</div>
+        </div>
+        <div class="tester-cta">
+          <a href="https://m.me/saifur.rahman.829126" target="_blank" rel="noopener" class="btn btn-primary tester-btn">Message my rep from Blackdog directly to receive your free collar&nbsp;&rarr;</a>
+          <p class="filter">Not a giveaway. Take the work seriously, or leave the slot for someone who will.</p>
+        </div>
+      </div>
+
+      <div class="disclosure reveal">
+        <div class="lbl">Disclosure</div>
+        <p>I get attribution when you use my code. The framework's recommendation came first, the partnership followed.</p>
       </div>
     </div>
   </section>
